@@ -50,11 +50,11 @@ function initWhiteStorm() {
   WORLD.man_0_0 = WORLD.Model({
 
       geometry: {
-          path: "3d/man.json"
+          path: "3d/man.json",
       },
 
-      mass: 100,
-      onlyvis: false,
+      mass: 0,
+      physics: false,
 
       material: {
           shading: THREE.SmoothShading,
