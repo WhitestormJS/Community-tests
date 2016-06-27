@@ -84,7 +84,7 @@ function initWhiteStorm() {
   });
 
   setTimeout(function() {
-    var start = new Date().getTime();
+    var start = performance.now();
 
     for (var i=0; i<=columns; i++) {
       for (var j=0; j<=rows; j++) {
@@ -97,7 +97,7 @@ function initWhiteStorm() {
         }
       }
 
-      var end = new Date().getTime();
+      var end = performance.now();
       var time = end - start;
     }
 
